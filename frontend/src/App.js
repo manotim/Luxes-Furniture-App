@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './App.css';
 import AddFurniture from './components/addFurniture';
+import UpdateFurniture from './components/updateFurniture';
 
 function App() {
   const [furniture, setFurniture] = useState([]);
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <AddFurniture/>
+      <UpdateFurniture/>
       {furniture.map(furnitureItem => (
         <div key={furnitureItem.id}>
           <img src={furnitureItem.image} alt={furnitureItem.name} />
