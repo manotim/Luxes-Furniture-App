@@ -41,8 +41,6 @@ class Customer(db.Model, SerializerMixin):
 class Owner(db.Model, SerializerMixin):
     __tablename__ = 'owners'
 
-    # serialize_rules = ('-restaurantpizzas.game',)
-
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, unique=True)
     location = db.Column(db.String)

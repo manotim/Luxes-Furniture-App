@@ -32,16 +32,3 @@ with app.app_context():
         db.session.add(owner)
 
     db.session.commit()
-
-    # strengths = ["Strong", "Weak", "Average"]
-    # all_powers = Power.query.all()
-
-    # for hero in Hero.query.all():
-    #     for  i in range(fake.random_int(min=1, max=8)):
-    #         power = fake.random_element(all_powers)
-    #         hero_power = HeroPower(hero=hero, power=power, strength=fake.random_element(strengths))
-    #         db.session.add(hero_power)
-
-    # db.session.commit()
-
-    # print("🦸‍♀️ Done seeding!")
